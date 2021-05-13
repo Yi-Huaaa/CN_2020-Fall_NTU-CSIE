@@ -36,15 +36,15 @@
   1. Change the socket from TCP to **UDP socket**
   2. There is a agent, who would randomly drop out the packets. So, we needed to deal with: 
     A. **Go-Back-N**, for both (1) normal case, and (2) packet loss case 
-    B. Go-Back-N with **congestion control**
-    C-1. Packet loss: Time out & Retransmission (Go-Back-N)
-    C-2. Packet loss: Sequence number
-    C-3. Packet loss: Completeness and correctness of transmitted file
-    D. Buffer handling
-      * Buffer Overflow: Drop the packets during out of buffer
-      * Flush (write) to the file: Only when buffer overflows or all packets in range are received.
-    E. Slow start
-    F. Show message: 
-    - Sender: send, recv, data, ack, fin, finack, sequence number, time out, resnd, winSize, threshold
-    - Receiver: send, recv, data, ack, fin, finack, sequence number, drop, flush
-    - Agent: get, fwd, data, ack, fin, finack, sequence number, drop, loss rate
+    B. Go-Back-N with **congestion control**.  
+    C-1. Packet loss: Time out & Retransmission (Go-Back-N).  
+    C-2. Packet loss: Sequence number.  
+    C-3. Packet loss: Completeness and correctness of transmitted file.  
+    D. Buffer handling.  
+      * Buffer Overflow: Drop the packets during out of buffer.  
+      * Flush (write) to the file: Only when buffer overflows or all packets in range are received.   
+    E. Slow start.  
+    F. Show message:    
+    - Sender: send, recv, data, ack, fin, finack, sequence number, time out, resnd, winSize, threshold.   
+    - Receiver: send, recv, data, ack, fin, finack, sequence number, drop, flush.   
+    - Agent: get, fwd, data, ack, fin, finack, sequence number, drop, loss rate.   
