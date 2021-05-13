@@ -42,7 +42,7 @@
     C-3. Packet loss: Completeness and correctness of transmitted file.  
     D. Buffer handling.  
       * Buffer Overflow: Drop the packets during out of buffer.  
-      * Flush (write) to the file: Only when buffer overflows or all packets in range are received.   
+      * Flush (write) to the file: Only when buffer overflows or all packets in range are received.  
     E. Slow start.  
     F. Show message:    
       * Sender: send, recv, data, ack, fin, finack, sequence number, time out, resnd, winSize, threshold.   
