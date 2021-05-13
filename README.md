@@ -45,6 +45,6 @@
       * Flush (write) to the file: Only when buffer overflows or all packets in range are received.   
     E. Slow start.  
     F. Show message:    
-    - Sender: send, recv, data, ack, fin, finack, sequence number, time out, resnd, winSize, threshold.   
-    - Receiver: send, recv, data, ack, fin, finack, sequence number, drop, flush.   
-    - Agent: get, fwd, data, ack, fin, finack, sequence number, drop, loss rate.   
+      * Sender: send, recv, data, ack, fin, finack, sequence number, time out, resnd, winSize, threshold.   
+      * Receiver: send, recv, data, ack, fin, finack, sequence number, drop, flush.   
+      * Agent: get, fwd, data, ack, fin, finack, sequence number, drop, loss rate.   
